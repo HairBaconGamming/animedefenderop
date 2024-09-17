@@ -26,7 +26,8 @@ ImageLabel.Size = UDim2.new(0.0807754472, 0, 0.179211468, 0)
 ImageLabel.Parent = Frame
 
 game:GetService("UserInputService").WindowFocusReleased:Connect(function() -- tab in
-	queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()")
+	queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/HairBaconGamming/animedefenderop/refs/heads/main/main.lua'))()")
+	game:GetService("TeleportService"):Teleport(game.PlaceId,game.Players.LocalPlayer)
 end)
 
 UIAspectRatioConstraint.Parent = ImageLabel

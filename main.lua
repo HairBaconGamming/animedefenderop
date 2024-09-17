@@ -1,4 +1,3 @@
-task.wait(5)
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local ImageLabel = Instance.new("ImageLabel")
@@ -34,7 +33,7 @@ UIAspectRatioConstraint.Parent = ImageLabel
 while task.wait() do
 	local t = ''
 	for i = 1,100 do
-		for i = 1,1000 do
+		for i = 1,500 do
 			t..=game:GetService("HttpService"):GenerateGUID(false)
 		end
 		task.wait()
